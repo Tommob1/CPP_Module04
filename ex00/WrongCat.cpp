@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 16:52:38 by btomlins          #+#    #+#             */
-/*   Updated: 2024/11/04 17:00:30 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/11/04 17:02:26 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ WrongCat::~WrongCat()
 
 void WrongCat::makeSound() const
 {
-    std::cout <<< "Meow? (This is the wrong sound)" << std::endl;
+    std::cout << "Meow? (This is the wrong sound)" << std::endl;
 }
