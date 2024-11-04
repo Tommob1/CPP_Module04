@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 16:47:04 by btomlins          #+#    #+#             */
-/*   Updated: 2024/11/04 16:48:46 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/11/04 17:04:16 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class Cat : public Animal
         Cat();
         ~Cat();
         
-        void makeSound() const override;
+        void makeSound() const;
 };
 
 #endif
