@@ -6,7 +6,7 @@
 #    By: btomlins <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/04 13:16:59 by btomlins          #+#    #+#              #
-#    Updated: 2024/11/04 17:02:19 by btomlins         ###   ########.fr        #
+#    Updated: 2024/11/11 15:36:16 by btomlins         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ INFILES = main.cpp\
 		  Dog.cpp\
 		  WrongAnimal.cpp\
 		  WrongCat.cpp\
+		  Brain.cpp\
 
 OBJFILES = $(INFILES:.cpp=.o)
 
