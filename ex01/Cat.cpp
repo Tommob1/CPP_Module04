@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 16:47:06 by btomlins          #+#    #+#             */
-/*   Updated: 2024/11/11 15:48:51 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/11/11 16:03:57 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ Cat &Cat::operator=(const Cat &other)
 
 Cat::~Cat()
 {
+    delete brain;
     std::cout << "Cat destroyed." << std::endl;
 }
 

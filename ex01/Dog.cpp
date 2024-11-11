@@ -6,11 +6,17 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:31:05 by btomlins          #+#    #+#             */
-/*   Updated: 2024/11/11 15:49:15 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/11/11 16:03:25 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
+
+Dog::Dog() : brain(new Brain()) 
+{
+    type = "Dog";
+    std::cout << "Dog created." << std::endl;
+}
 
 Dog::Dog(const Dog &other) : Animal(other), brain(new Brain(*other.brain)) 
 {
@@ -31,8 +37,9 @@ Dog &Dog::operator=(const Dog &other)
     return *this;
 }
 
-Dog::~Dog()
+Dog::~Dog() 
 {
+    delete brain;
     std::cout << "Dog destroyed." << std::endl;
 }
 
