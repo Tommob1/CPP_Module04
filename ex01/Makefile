@@ -6,7 +6,7 @@
 #    By: btomlins <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/04 13:16:59 by btomlins          #+#    #+#              #
-#    Updated: 2024/11/11 15:36:16 by btomlins         ###   ########.fr        #
+#    Updated: 2024/11/11 15:51:32 by btomlins         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ INFILES = main.cpp\
 
 OBJFILES = $(INFILES:.cpp=.o)
 
-NAME = Polymorphism
+NAME = I_dont_want_to_set_the_world_on_fire
 
 all: $(NAME)
 
