@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:24:26 by btomlins          #+#    #+#             */
-/*   Updated: 2024/11/04 13:26:23 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/11/12 13:29:55 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Animal
         Animal();
         virtual ~Animal();
 
-        virtual void makeSound() const;
+        virtual void makeSound() const = 0;
         std::string getType() const;
 };
 
