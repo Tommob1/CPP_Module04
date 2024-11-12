@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:16:57 by btomlins          #+#    #+#             */
-/*   Updated: 2024/11/11 16:09:04 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/11/12 13:23:49 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,27 +19,26 @@
 int main() 
 {
     std::cout << "--- Correct Polymorphism Example ---" << std::endl;
-    const Animal* meta = new Animal();
-    const Animal* j = new Dog();
-    const Animal* i = new Cat();
+    const Animal* dog = new Dog();
+    const Animal* cat = new Cat();
 
-    std::cout << j->getType() << " " << std::endl;
-    std::cout << i->getType() << " " << std::endl;
-    j->makeSound();
-    i->makeSound();
-    meta->makeSound();
+    std::cout << dog->getType() << " " << std::endl;
+    std::cout << cat->getType() << " " << std::endl;
+    dog->makeSound();
+    cat->makeSound();
 
-    delete meta;
-    delete j;
-    delete i;
+    delete dog;
+    delete cat;
 
     std::cout << "\n--- Array of Animals (Polymorphism) ---" << std::endl;
 
+    // Manually create each animal
     Animal* animal1 = new Dog();
     Animal* animal2 = new Dog();
     Animal* animal3 = new Cat();
     Animal* animal4 = new Cat();
 
+    // Manually print each animal's type and sound
     std::cout << animal1->getType() << " says: ";
     animal1->makeSound();
 
@@ -52,6 +51,7 @@ int main()
     std::cout << animal4->getType() << " says: ";
     animal4->makeSound();
 
+    // Manually delete each animal
     delete animal1;
     delete animal2;
     delete animal3;
@@ -62,13 +62,13 @@ int main()
     Dog originalDog;
     originalDog.makeSound();
 
-    Dog copiedDog = originalDog;
+    Dog copiedDog = originalDog; // Uses the copy constructor
     copiedDog.makeSound();
 
     Cat originalCat;
     originalCat.makeSound();
 
-    Cat copiedCat = originalCat;
+    Cat copiedCat = originalCat; // Uses the copy constructor
     copiedCat.makeSound();
 
     return 0;
