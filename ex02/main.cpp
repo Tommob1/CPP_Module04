@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:16:57 by btomlins          #+#    #+#             */
-/*   Updated: 2024/11/12 13:23:49 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/11/13 14:54:59 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,13 +32,11 @@ int main()
 
     std::cout << "\n--- Array of Animals (Polymorphism) ---" << std::endl;
 
-    // Manually create each animal
     Animal* animal1 = new Dog();
     Animal* animal2 = new Dog();
     Animal* animal3 = new Cat();
     Animal* animal4 = new Cat();
 
-    // Manually print each animal's type and sound
     std::cout << animal1->getType() << " says: ";
     animal1->makeSound();
 
@@ -51,7 +49,6 @@ int main()
     std::cout << animal4->getType() << " says: ";
     animal4->makeSound();
 
-    // Manually delete each animal
     delete animal1;
     delete animal2;
     delete animal3;
@@ -62,13 +59,13 @@ int main()
     Dog originalDog;
     originalDog.makeSound();
 
-    Dog copiedDog = originalDog; // Uses the copy constructor
+    Dog copiedDog = originalDog;
     copiedDog.makeSound();
 
     Cat originalCat;
     originalCat.makeSound();
 
-    Cat copiedCat = originalCat; // Uses the copy constructor
+    Cat copiedCat = originalCat;
     copiedCat.makeSound();
 
     return 0;
